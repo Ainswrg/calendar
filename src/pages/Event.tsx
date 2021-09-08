@@ -17,7 +17,8 @@ const Event: FC = () => {
         footer={null}
         onCancel={() => setModalVisible(false)}
       >
-        {}
+        <EventForm
+        />
       </Modal>
     </Layout>
   );
