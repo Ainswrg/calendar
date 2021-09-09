@@ -8,17 +8,17 @@ export interface EventState {
 }
 
 export enum EventActionEnum {
-  SET_GUEST = 'SET_GUEST',
-  SET_EVENT = 'SET_EVENT',
+  SET_GUESTS = 'SET_GUESTS',
+  SET_EVENTS = 'SET_EVENTS',
 }
 
 export interface SetGuestsAction {
-  type: EventActionEnum.SET_GUEST;
+  type: EventActionEnum.SET_GUESTS;
   payload: IUser[];
 }
 
 export interface SetEventsAction {
-  type: EventActionEnum.SET_EVENT;
+  type: EventActionEnum.SET_EVENTS;
   payload: IEvent[];
 }
 
